@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thyroid Prediction</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>Thyroid Disease Prediction</h2>
+
+<form action="/predict" method="post">
+
+Age:
+<input type="text" name="age"><br><br>
+
+Sex (0 = Female, 1 = Male):
+<input type="text" name="sex"><br><br>
+
+TSH:
+<input type="text" name="tsh"><br><br>
+
+T3:
+<input type="text" name="t3"><br><br>
+
+TT4:
+<input type="text" name="tt4"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+
+</body>
+</html>
